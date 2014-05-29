@@ -1,0 +1,13 @@
+C:\work\projects\yitao\HelloWorld\HelloWorldService\obj\Debug\HelloWorldService.csprojResolveAssemblyReference.cache
+C:\work\projects\yitao\HelloWorld\HelloWorldService\obj\Debug\HelloWorldService.ProjectInstaller.resources
+C:\work\projects\yitao\HelloWorld\HelloWorldService\obj\Debug\HelloWorldService.csproj.GenerateResource.Cache
+C:\work\projects\yitao\HelloWorld\HelloWorldService\bin\Debug\NLog.config
+C:\work\projects\yitao\HelloWorld\HelloWorldService\bin\Debug\HelloWorldService.exe.config
+C:\work\projects\yitao\HelloWorld\HelloWorldService\bin\Debug\HelloWorldService.exe
+C:\work\projects\yitao\HelloWorld\HelloWorldService\bin\Debug\HelloWorldService.pdb
+C:\work\projects\yitao\HelloWorld\HelloWorldService\bin\Debug\HelloServiceLib.dll
+C:\work\projects\yitao\HelloWorld\HelloWorldService\bin\Debug\NLog.dll
+C:\work\projects\yitao\HelloWorld\HelloWorldService\bin\Debug\HelloServiceLib.pdb
+C:\work\projects\yitao\HelloWorld\HelloWorldService\bin\Debug\NLog.xml
+C:\work\projects\yitao\HelloWorld\HelloWorldService\obj\Debug\HelloWorldService.exe
+C:\work\projects\yitao\HelloWorld\HelloWorldService\obj\Debug\HelloWorldService.pdb

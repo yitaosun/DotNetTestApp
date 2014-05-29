@@ -1,0 +1,1 @@
+D:\Workspace\Samples\HelloWorld2\Console\bin\Debug\HelloWorld.exe.config

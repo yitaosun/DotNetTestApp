@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="523032ff-8cf0-4b5a-9629-06db1fe77628" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ec2-54-211-116-91.compute-1.amazonaws.com:8088/ServiceModelSamples/imageservice/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Microsoft.ServiceModel.Samples.wsdl" MetadataType="Wsdl" ID="99cf3f9d-3e28-46ac-82b9-cae8fce27a28" SourceId="1" SourceUrl="http://ec2-54-211-116-91.compute-1.amazonaws.com:8088/ServiceModelSamples/imageservice/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="5115db20-a53c-46d1-b330-774595dbfe03" SourceId="1" SourceUrl="http://ec2-54-211-116-91.compute-1.amazonaws.com:8088/ServiceModelSamples/imageservice/mex" />
+    <MetadataFile FileName="Microsoft.ServiceModel.Samples.xsd" MetadataType="Schema" ID="6e381d44-2996-486c-ab10-56825ce84fe5" SourceId="1" SourceUrl="http://ec2-54-211-116-91.compute-1.amazonaws.com:8088/ServiceModelSamples/imageservice/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="9bb37b8f-1d42-4802-9f08-6795c32263b6" SourceId="1" SourceUrl="http://ec2-54-211-116-91.compute-1.amazonaws.com:8088/ServiceModelSamples/imageservice/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
