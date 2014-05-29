@@ -1,7 +1,0 @@
-C:\work\projects\yitao\HelloWorld\HelloServiceLib\bin\Debug\HelloServiceLib.dll
-C:\work\projects\yitao\HelloWorld\HelloServiceLib\bin\Debug\HelloServiceLib.pdb
-C:\work\projects\yitao\HelloWorld\HelloServiceLib\bin\Debug\NLog.dll
-C:\work\projects\yitao\HelloWorld\HelloServiceLib\bin\Debug\NLog.xml
-C:\work\projects\yitao\HelloWorld\HelloServiceLib\obj\Debug\HelloServiceLib.csprojResolveAssemblyReference.cache
-C:\work\projects\yitao\HelloWorld\HelloServiceLib\obj\Debug\HelloServiceLib.dll
-C:\work\projects\yitao\HelloWorld\HelloServiceLib\obj\Debug\HelloServiceLib.pdb
