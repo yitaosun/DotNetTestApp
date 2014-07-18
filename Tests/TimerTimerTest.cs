@@ -7,7 +7,7 @@ namespace TestApp.Tests
     {
         private Timer m_worker;
 
-        public TimerTimerTest()
+        public override void DoSomething()
         {
             m_worker = new Timer();
             m_worker.Interval = 1000;

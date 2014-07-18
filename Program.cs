@@ -13,26 +13,19 @@ namespace TestApp
 
         static Program()
         {
-            //DefaultTests.Add(new ThreadingTimerTest());
-            //DefaultTests.Add(new AThreadedTest(new HelloWorldTest()));
-            //DefaultTests.Add(new WCFServiceTest());
-            //for (int i = 0; i < 50; i++) { DefaultTests.Add(new WCFClientTest()); }
-            //DefaultTests.Add(new WCFChannelTest());
-            //DefaultTests.Add(new WCFAsyncTest());
-            //DefaultTests.Add(new BackgroundTest(new AppDomainTest(typeof(WCFChannelTest))));
-            //DefaultTests.Add(new BackgroundTest(new AppDomainTest(typeof(WeakReferenceTest))));
-            //DefaultTests.Add(new GenericLocalVariableTest());
-            //DefaultTests.Add(new GenericWeakReferenceTest());
-            //DefaultTests.Add(new ReturnBeforeTryTest());
-            //for (int i = 0; i < 50; i++)
-            //{
-            //    Tests.Add(new BackgroundTest(new StreamTest()));
-            //}
+            DefaultTests.Add(new ThreadingTimerTest());
+            DefaultTests.Add(new AThreadedTest(new HelloWorldTest()));
+            DefaultTests.Add(new WCFServiceTest());
+            for (int i = 0; i < 50; i++) { DefaultTests.Add(new WCFClientTest()); }
+            DefaultTests.Add(new WCFChannelTest());
+            DefaultTests.Add(new WCFAsyncTest());
+            DefaultTests.Add(new GenericLocalVariableTest());
+            DefaultTests.Add(new ReturnBeforeTryTest());
         }
 
         static void Main(string[] args)
         {
-            IEnumerable<ATest> tests = args.Length == 0 ? DefaultTests : CreateTests(args);
+            List<ATest> tests = args.Length == 0 ? DefaultTests : CreateTests(args);
             foreach (ATest test in tests)
             {
                 try
@@ -53,7 +46,7 @@ namespace TestApp
             Environment.Exit(0);
         }
 
-        static IEnumerable<ATest> CreateTests(string[] testClassNames)
+        static List<ATest> CreateTests(string[] testClassNames)
         {
             return testClassNames.Select(testClassName => (ATest) Assembly.GetExecutingAssembly().CreateInstance(string.Format("TestApp.Tests.{0}", testClassName))).ToList();
         }
