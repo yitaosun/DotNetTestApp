@@ -30,7 +30,7 @@ namespace TestApp
             {
                 try
                 {
-                    // Console.ReadKey();
+                    Console.ReadKey();
                     Console.WriteLine("Started {0}", test.GetName());
                     test.DoSomething();
                     Console.WriteLine("Finished {0}", test.GetName());

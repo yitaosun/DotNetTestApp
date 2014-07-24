@@ -39,7 +39,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
+    <Prefer32Bit>true</Prefer32Bit>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <DocumentationFile>
     </DocumentationFile>
@@ -92,6 +92,7 @@
     <Compile Include="Tests\DisposableTimerTest.cs" />
     <Compile Include="Tests\GenericLocalVariableTest.cs" />
     <Compile Include="Tests\HelloWorldTest.cs" />
+    <Compile Include="Tests\IntPtrBitnessTest.cs" />
     <Compile Include="Tests\OptimizationTest.cs" />
     <Compile Include="Tests\OrphanedTimerTest.cs" />
     <Compile Include="Tests\StreamTest.cs" />
@@ -104,6 +105,7 @@
     <Compile Include="Tests\WCF\WCFChannelTest.cs" />
     <Compile Include="Tests\WCF\WCFClientTest.cs" />
     <Compile Include="Tests\WCF\WCFServiceTest.cs" />
+    <Compile Include="Tests\WCF\WCFSuite.cs" />
     <Compile Include="Tests\WeakReferenceFunctionPointerTest.cs" />
   </ItemGroup>
   <ItemGroup>
