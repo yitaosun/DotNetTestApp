@@ -96,6 +96,7 @@
     <Compile Include="Tests\IntPtrBitnessTest.cs" />
     <Compile Include="Tests\OptimizationTest.cs" />
     <Compile Include="Tests\OrphanedTimerTest.cs" />
+    <Compile Include="Tests\InvokeGenericMethodTest.cs" />
     <Compile Include="Tests\StreamTest.cs" />
     <Compile Include="Tests\ThreadingTimerTest.cs" />
     <Compile Include="Tests\TimerTimerTest.cs" />
