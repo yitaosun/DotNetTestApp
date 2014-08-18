@@ -3,7 +3,7 @@ using System.ServiceModel;
 
 namespace TestApp.Tests.WCF
 {
-    class WCFChannelTest : ATest
+    class ChannelTest : ATest
     {
         public override void DoSomething()
         {

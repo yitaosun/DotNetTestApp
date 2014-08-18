@@ -3,20 +3,27 @@ using System.Threading.Tasks;
 
 namespace TestApp.Tests.WCF
 {
-    class WCFSuite : ATest
+    class Suite : ATest
     {
+        private ServiceTest m_serviceTest;
+
+        public Suite()
+        {
+            m_serviceTest = new ServiceTest();
+        }
+
         public override void DoSomething()
         {
-            (new WCFServiceTest()).DoSomething();
+            m_serviceTest.DoSomething();
             Thread thread = new Thread(() =>
             {
                 while (true)
                 {
-                    WCFAsyncTest asyncTest = new WCFAsyncTest();
+                    AsyncTest asyncTest = new AsyncTest();
                     asyncTest.DoSomething();
-                    WCFClientTest clientTest = new WCFClientTest();
+                    ClientTest clientTest = new ClientTest();
                     clientTest.DoSomething();
-                    WCFChannelTest channelTest = new WCFChannelTest();
+                    ChannelTest channelTest = new ChannelTest();
                     channelTest.DoSomething();
                     Thread.Sleep(200);
                 }

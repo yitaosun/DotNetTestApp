@@ -2,7 +2,7 @@
 
 namespace TestApp.Tests.WCF
 {
-    public class WCFClientTest : ATest
+    public class ClientTest : ATest
     {
         public override void DoSomething()
         {

@@ -4,7 +4,7 @@ using System.ServiceModel.Description;
 
 namespace TestApp.Tests.WCF
 {
-    public class WCFServiceTest : ATest
+    public class ServiceTest : ATest
     {
         public override void DoSomething()
         {

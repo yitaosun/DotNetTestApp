@@ -15,10 +15,10 @@ namespace TestApp
         {
             DefaultTests.Add(new ThreadingTimerTest());
             DefaultTests.Add(new AThreadedTest(new HelloWorldTest()));
-            DefaultTests.Add(new WCFServiceTest());
-            for (int i = 0; i < 50; i++) { DefaultTests.Add(new WCFClientTest()); }
-            DefaultTests.Add(new WCFChannelTest());
-            DefaultTests.Add(new WCFAsyncTest());
+            DefaultTests.Add(new ServiceTest());
+            for (int i = 0; i < 50; i++) { DefaultTests.Add(new ClientTest()); }
+            DefaultTests.Add(new ChannelTest());
+            DefaultTests.Add(new AsyncTest());
             DefaultTests.Add(new GenericLocalVariableTest());
             DefaultTests.Add(new ReturnBeforeTryTest());
         }

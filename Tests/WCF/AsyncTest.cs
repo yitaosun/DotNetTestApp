@@ -3,11 +3,11 @@ using TestApp.Tests.WCF.Async;
 
 namespace TestApp.Tests.WCF
 {
-    class WCFAsyncTest : ATest
+    class AsyncTest : ATest
     {
         private HelloWorldServiceClient m_client;
 
-        public WCFAsyncTest()
+        public AsyncTest()
         {
             m_client = new HelloWorldServiceClient();
         }

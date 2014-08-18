@@ -103,11 +103,11 @@
     <Compile Include="Tests\TryReturnTest.cs" />
     <Compile Include="Tests\WCF\HelloWorldService.cs" />
     <Compile Include="Tests\WCF\IHelloWorldService.cs" />
-    <Compile Include="Tests\WCF\WCFAsyncTest.cs" />
-    <Compile Include="Tests\WCF\WCFChannelTest.cs" />
-    <Compile Include="Tests\WCF\WCFClientTest.cs" />
-    <Compile Include="Tests\WCF\WCFServiceTest.cs" />
-    <Compile Include="Tests\WCF\WCFSuite.cs" />
+    <Compile Include="Tests\WCF\AsyncTest.cs" />
+    <Compile Include="Tests\WCF\ChannelTest.cs" />
+    <Compile Include="Tests\WCF\ClientTest.cs" />
+    <Compile Include="Tests\WCF\ServiceTest.cs" />
+    <Compile Include="Tests\WCF\Suite.cs" />
     <Compile Include="Tests\WeakReferenceFunctionPointerTest.cs" />
   </ItemGroup>
   <ItemGroup>
