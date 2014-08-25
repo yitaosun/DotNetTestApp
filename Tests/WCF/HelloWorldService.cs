@@ -8,7 +8,7 @@ namespace TestApp.Tests.WCF
     {
         public string Hello(Person person)
         {
-            Thread.Sleep(500);
+            Thread.Sleep(100);
             return person == null ? "Hello?" : string.Format("Hello {0}", person.Name);
         }
     }

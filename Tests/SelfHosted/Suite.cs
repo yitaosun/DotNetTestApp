@@ -1,29 +1,28 @@
 ﻿using System.Threading;
 
-namespace TestApp.Tests.WCF
+namespace TestApp.Tests.SelfHosted
 {
     class Suite : ATest
     {
-        private readonly ServiceTest m_serviceTest;
+        private HttpSelfHostServerTest m_serverTest;
 
         public Suite()
         {
-            m_serviceTest = new ServiceTest();
+            m_serverTest = new HttpSelfHostServerTest();
         }
 
         public override void DoSomething()
         {
-            m_serviceTest.DoSomething();
+            m_serverTest.DoSomething();
+            Thread.Sleep(2000);
             var thread = new Thread(() =>
             {
                 for (int i = 0; i < 200; i++)
                 {
-                    var asyncTest = new AsyncTest();
-                    asyncTest.DoSomething();
-                    var clientTest = new ClientTest();
+                    var clientTest = new HttpClientTest();
                     clientTest.DoSomething();
-                    var channelTest = new ChannelTest();
-                    channelTest.DoSomething();
+                    var invokerTest = new HttpMessageInvokerTest();
+                    invokerTest.DoSomething();
                     Thread.Sleep(500);
                 }
             });

@@ -67,10 +67,31 @@
     <StartupObject>TestApp.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.0\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.SelfHost, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebApi.SelfHost.5.2.0\lib\net45\System.Web.Http.SelfHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +118,11 @@
     <Compile Include="Tests\OptimizationTest.cs" />
     <Compile Include="Tests\OrphanedTimerTest.cs" />
     <Compile Include="Tests\InvokeGenericMethodTest.cs" />
+    <Compile Include="Tests\SelfHosted\HttpClientTest.cs" />
+    <Compile Include="Tests\SelfHosted\HttpMessageInvokerTest.cs" />
+    <Compile Include="Tests\SelfHosted\Product.cs" />
+    <Compile Include="Tests\SelfHosted\HttpSelfHostServerTest.cs" />
+    <Compile Include="Tests\SelfHosted\Suite.cs" />
     <Compile Include="Tests\StreamTest.cs" />
     <Compile Include="Tests\ThreadingTimerTest.cs" />
     <Compile Include="Tests\TimerTimerTest.cs" />
@@ -115,6 +141,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="helloworld.snk" />
+    <None Include="packages.config" />
     <None Include="Service References\Tests.WCF.Async\service.wsdl" />
     <None Include="Service References\Tests.WCF.Async\service.xsd">
       <SubType>Designer</SubType>
